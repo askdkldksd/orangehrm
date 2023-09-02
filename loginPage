@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login page</title>
+</head>
+<body>
+	 <di>
+  	<form id="loginForm">
+  		<fieldset>
+  			<legend align="center" style="color: blue;">
+  				LOGIN
+  			</legend>
+  			<label align="center" id="un"> Username :</label>
+  			<input type="text" name="Username"  id="username">
+  			<br><br>
+  			<label align ="center" id="psw"> Password :</label>
+  			<input type="Password" name="Password"  id="password">
+  			<br><br>
+  			<button   onclick="log()">LOGIN</button>
+  			<!-- //<a href="file:///C:/Users/Ankush%20mund/Desktop/ankush_webtech/test.html">LOGIN</a> -->
+  			<input type="reset" name="cncl" value="CANCLE">
+  			
+  				
+
+  		</fieldset>
+  	</form>
+  </di>
+<script type="text/javascript">
+  				
+                      function log() 
+                   {    
+                   	      event.preventDefault();
+                      	const username = document.getElementById('username').value;
+                        const password = document.getElementById('password').value;
+
+                                                                                           // Check if the login credentials are correct (you can replace this with your authentication logic)
+                       if (username === 'abc' && password === '123') 
+                       {
+                                                                                          // If credentials are correct, redirect to the welcome page (replace "welcome.html" with your actual welcome page URL)
+                             window.location.href = 'test.html';
+                       }
+                         
+  				    
+  				        else
+  				     {
+  					    alert('Invalid username or password. Please try again.');
+  				     }
+  				   }
+  				   const loginForm = document.getElementById('loginForm');
+                   loginForm.addEventListener('submit', log);
+
+  				 
+  			</script>
+</body>
+</html>
+
+
